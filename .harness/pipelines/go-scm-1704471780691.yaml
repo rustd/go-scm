@@ -18,6 +18,13 @@ pipeline:
           execution:
             steps:
               - step:
+                  type: Run
+                  name: Run_2
+                  identifier: Run_2
+                  spec:
+                    shell: Sh
+                    command: echo "Hello PR"
+              - step:
                   identifier: gotest
                   name: go_test
                   spec:
@@ -33,13 +40,6 @@ pipeline:
                     buildTool: Rspec
                     runOnlySelectedTests: true
                     enableTestSplitting: false
-              - step:
-                  type: Run
-                  name: Run_2
-                  identifier: Run_2
-                  spec:
-                    shell: Sh
-                    command: echo "Hello Master"
           platform:
             os: Linux
             arch: Amd64
