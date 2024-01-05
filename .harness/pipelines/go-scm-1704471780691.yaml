@@ -24,6 +24,13 @@ pipeline:
                     command: go test -v ./...
                   timeout: ""
                   type: Run
+             - step:
+                  type: Run
+                  name: Run_2
+                  identifier: Run_2
+                  spec:
+                    shell: Sh
+                    command: echo "Hello PR Branch"
               - step:
                   type: RunTests
                   name: RunTests_1
