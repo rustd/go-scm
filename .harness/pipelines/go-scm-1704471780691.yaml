@@ -39,7 +39,7 @@ pipeline:
                   identifier: Run_2
                   spec:
                     shell: Sh
-                    command: echo "Hello Master"
+                    command: echo "Hello PR"
           platform:
             os: Linux
             arch: Amd64
