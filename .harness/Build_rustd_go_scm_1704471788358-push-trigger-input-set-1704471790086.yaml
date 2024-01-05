@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_rustd_go_scm_1704471788358-push-trigger-input-set
+  identifier: Build_rustd_go_scm_1704471788358pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_rustd_go_scm_1704471788358
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
