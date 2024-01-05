@@ -7,7 +7,6 @@ package scm
 import (
 	"net/http"
 	"testing"
-	"os"
 	"os/exec"
 )
 
