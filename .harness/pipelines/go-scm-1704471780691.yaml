@@ -18,13 +18,6 @@ pipeline:
           execution:
             steps:
               - step:
-                  identifier: gobuild
-                  name: go_build
-                  spec:
-                    command: go build
-                  timeout: ""
-                  type: Run
-              - step:
                   identifier: gotest
                   name: go_test
                   spec:
