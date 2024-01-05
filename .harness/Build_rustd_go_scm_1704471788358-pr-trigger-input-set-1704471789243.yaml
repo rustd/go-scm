@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_rustd_go_scm_1704471788358-pr-trigger-input-set
+  identifier: Build_rustd_go_scm_1704471788358prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_rustd_go_scm_1704471788358
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
