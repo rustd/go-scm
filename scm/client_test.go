@@ -14,6 +14,7 @@ func TestClient(t *testing.T) {
 }
 
 func TestResponse(t *testing.T) {
+	println("HELLO PRANAV")
 	res := newResponse(&http.Response{
 		StatusCode: 200,
 		Header: http.Header{
