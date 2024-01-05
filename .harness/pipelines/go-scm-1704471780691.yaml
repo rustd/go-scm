@@ -24,6 +24,15 @@ pipeline:
                     command: go test -v ./...
                   timeout: ""
                   type: Run
+              - step:
+                  type: RunTests
+                  name: RunTests_1
+                  identifier: RunTests_1
+                  spec:
+                    language: Ruby
+                    buildTool: Rspec
+                    runOnlySelectedTests: true
+                    enableTestSplitting: false
           platform:
             os: Linux
             arch: Amd64
