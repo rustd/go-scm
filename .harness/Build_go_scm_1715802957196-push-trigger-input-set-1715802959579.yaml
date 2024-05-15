@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_go_scm_1715802957196-push-trigger-input-set
+  identifier: Build_go_scm_1715802957196pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: pranavt1
+  pipeline:
+    identifier: Build_go_scm_1715802957196
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
