@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_go_scm_1715784210452-pr-trigger-input-set
+  identifier: Build_go_scm_1715784210452prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: pranavt1
+  pipeline:
+    identifier: Build_go_scm_1715784210452
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
