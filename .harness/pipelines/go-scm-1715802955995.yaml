@@ -20,6 +20,17 @@ pipeline:
           execution:
             steps:
               - step:
+                  type: Run
+                  name: Run_4
+                  identifier: Run_4
+                  spec:
+                    shell: Sh
+                    command: |-
+                      echo <+pipeline.properties.ci.codebase.build.spec.branch>
+                      echo <+codebase.sourceBranch>
+                      echo <+codebase.targetBranch>
+                      echo <+codebase.branch>
+              - step:
                   identifier: gobuild
                   name: go_build
                   spec:
@@ -46,9 +57,9 @@ pipeline:
                   timeout: ""
                   type: Run
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Cloud
+            spec: {}
         type: CI
